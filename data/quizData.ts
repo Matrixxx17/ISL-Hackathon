@@ -180,16 +180,82 @@ export const modules: Module[] = moduleNames.map((name, index) => ({
 const videoMap: Record<ModuleName, { videoUri: any; options: string[]; correctOptionIndex: number }[]> = {
   "Introduction to ISL": [
     {
-      videoUri: require("../videos/Introduction to ISL/A.mp4"),
+      videoUri: require("../videos/Introduction to ISL/Fast.mp4"),
       options: ["A", "B", "C", "D"],
       correctOptionIndex: 0,
     },
     {
-      videoUri: require("../videos/Introduction to ISL/A.T.M. Card.mp4"),
+      videoUri: require("../videos/Introduction to ISL/Help.mp4"),
       options: ["A.T.M. Card", "Credit Card", "Debit Card", "ID Card"],
       correctOptionIndex: 0,
     },
+    {
+      videoUri: require("../videos/Introduction to ISL/Love.mp4"),
+      options: ["A", "B", "C", "D"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Introduction to ISL/Morning.mp4"),
+      options: ["A", "B", "C", "D"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Introduction to ISL/Night.mp4"),
+      options: ["A", "B", "C", "D"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Introduction to ISL/No.mp4"),
+      options: ["A", "B", "C", "D"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Introduction to ISL/Please.mp4"),
+      options: ["A", "B", "C", "D"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Introduction to ISL/Slow.mp4"),
+      options: ["A", "B", "C", "D"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Introduction to ISL/Sorry.mp4"),
+      options: ["A", "B", "C", "D"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Introduction to ISL/ThankYou.mp4"),
+      options: ["A", "B", "C", "D"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Introduction to ISL/Understand.mp4"),
+      options: ["A", "B", "C", "D"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Introduction to ISL/Where.mp4"),
+      options: ["A", "B", "C", "D"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Introduction to ISL/Who.mp4"),
+      options: ["A", "B", "C", "D"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Introduction to ISL/Yes.mp4"),
+      options: ["A", "B", "C", "D"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Introduction to ISL/Hello.mp4"),
+      options: ["A", "B", "C", "D"],
+      correctOptionIndex: 0,
+    }
   ],
+
   "Alphabets & Numbers": [
     {
       videoUri: require("../videos/Alphabets & Numbers/A/A.mp4"),
@@ -197,10 +263,100 @@ const videoMap: Record<ModuleName, { videoUri: any; options: string[]; correctOp
       correctOptionIndex: 0,
     },
     {
+      videoUri: require("../videos/Alphabets & Numbers/A/A.T.M.Card.mp4"),
+      options: ["A.T.M. Card", "Credit Card", "Passport", "Driving License"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/A/AadharCard.mp4"),
+      options: ["Aadhar Card", "PAN Card", "Voter ID", "Ration Card"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/A/Absorb.mp4"),
+      options: ["Absorb", "Release", "Throw", "Ignore"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/A/Accept.mp4"),
+      options: ["Accept", "Reject", "Deny", "Ignore"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/A/Accuse.mp4"),
+      options: ["Accuse", "Forgive", "Ignore", "Help"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/A/Agree.mp4"),
+      options: ["Agree", "Disagree", "Argue", "Doubt"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/A/Allow.mp4"),
+      options: ["Allow", "Forbid", "Block", "Stop"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/A/April.mp4"),
+      options: ["April", "May", "June", "July"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/A/Arrest.mp4"),
+      options: ["Arrest", "Release", "Rescue", "Ignore"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/A/August.mp4"),
+      options: ["August", "September", "October", "November"],
+      correctOptionIndex: 0,
+    },
+    
+
+    {
       videoUri: require("../videos/Alphabets & Numbers/B/B.mp4"),
       options: ["A", "B", "C", "D"],
       correctOptionIndex: 1,
     },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/B/Baby.mp4"),
+      options: ["Child", "Baby", "Teen", "Adult"],
+      correctOptionIndex: 1,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/B/Boy.mp4"),
+      options: ["Girl", "Boy", "Man", "Woman"],
+      correctOptionIndex: 1,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/B/Brother.mp4"),
+      options: ["Sister", "Brother", "Uncle", "Father"],
+      correctOptionIndex: 1,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/B/Brother-In-Law.mp4"),
+      options: ["Brother-In-Law", "Father-In-Law", "Cousin", "Nephew"],
+      correctOptionIndex: 1,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/B/Building.mp4"),
+      options: ["Tree", "Building", "Bridge", "Mountain"],
+      correctOptionIndex: 1,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/B/BusStand.mp4"),
+      options: ["Railway Station", "Bus Stand", "Airport", "Metro Station"],
+      correctOptionIndex: 1,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/B/But.mp4"),
+      options: ["And", "But", "Or", "Because"],
+      correctOptionIndex: 1,
+    },
+    
+
+
     {
       videoUri: require("../videos/Alphabets & Numbers/Numbers/10,000,000 or One Crore.mp4"),
       options: ["1 Million", "1 Crore", "100 Thousand", "10 Thousand"],
@@ -208,55 +364,480 @@ const videoMap: Record<ModuleName, { videoUri: any; options: string[]; correctOp
     },
     {
       videoUri: require("../videos/Alphabets & Numbers/Numbers/1000 or One Thousand.mp4"),
-      options: ["1000", "10000", "100", "10"],
+      options: ["1000", "10", "100", "10000"],
       correctOptionIndex: 0,
     },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/Numbers/0 or Zero - Copy.mp4"),
+      options: ["Zero", "1000", "10", "10000"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/Numbers/1 or One.mp4"),
+      options: ["1", "10", "100", "1000"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/Numbers/5,000,000 or Five Million.mp4"),
+      options: ["5 Million", "50 Thousand", "1 Million", "500 Thousand"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/Numbers/6 or Six.mp4"),
+      options: ["6", "16", "60", "600"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/Numbers/10 or Ten.mp4"),
+      options: ["100", "1000", "10", "1"],
+      correctOptionIndex: 2,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/Numbers/15 or Fifteen.mp4"),
+      options: ["50", "15", "5", "500"],
+      correctOptionIndex: 1,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/Numbers/20 or Twenty.mp4"),
+      options: ["12", "22", "20", "200"],
+      correctOptionIndex: 2,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/Numbers/50Th of Fiftieth.mp4"),
+      options: ["5th", "50th", "15th", "55th"],
+      correctOptionIndex: 1,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/Numbers/100 or One Hundred.mp4"),
+      options: ["10", "100", "1000", "1"],
+      correctOptionIndex: 1,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/Numbers/100,000 or One Lac.mp4"),
+      options: ["10 Thousand", "1 Million", "100 Thousand", "10 Lac"],
+      correctOptionIndex: 2,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/Numbers/1000 or One Thousand.mp4"),
+      options: ["10000", "1000", "100", "10"],
+      correctOptionIndex: 1,
+    },
+    
+
+
     {
       videoUri: require("../videos/Alphabets & Numbers/C/C.mp4"),
       options: ["O", "D", "P", "C"],
       correctOptionIndex: 3,
     },
     {
-      videoUri: require("../videos/Alphabets & Numbers/Numbers/6 or Six.mp4"),
-      options: ["50", "100", "6", "10"],
-      correctOptionIndex: 2,
-    },{
-      videoUri: require("../videos/Alphabets & Numbers/Numbers/20 or Twenty.mp4"),
-      options: ["1", "20", "100", "10"],
-      correctOptionIndex: 1,
+      videoUri: require("../videos/Alphabets & Numbers/C/Charger (Phone).mp4"),
+      options: ["Charger", "Cable", "Pen", "Book"],
+      correctOptionIndex: 3,
     },
+
+
     {
       videoUri: require("../videos/Alphabets & Numbers/Q/Q.mp4"),
       options: ["O", "D", "Q", "C"],
       correctOptionIndex: 2,
-    }, {
+    }, 
+
+
+    {
       videoUri: require("../videos/Alphabets & Numbers/V/V.mp4"),
       options: ["O", "D", "P", "V"],
       correctOptionIndex: 3,
     },
-    {
-      videoUri: require("../videos/Alphabets & Numbers/Numbers/5,000,000 or Five Million.mp4"),
-      options: ["10 Million", "10000", "5 Million", "50 "],
-      correctOptionIndex: 2,
-    },{
-      videoUri: require("../videos/Alphabets & Numbers/Numbers/100 or One Hundred.mp4"),
-      options: ["0", "5000", "100", "10"],
-      correctOptionIndex: 2,
-    },
 
-  ],
-  "Basic Greetings & Common Phrases": [
+
     {
-      videoUri: require("../videos/Basic Greetings & Common Phrases/A.mp4"),
-      options: ["Hello", "Goodbye", "Thank You", "Sorry"],
-      correctOptionIndex: 0,
+      videoUri: require("../videos/Alphabets & Numbers/D/D.mp4"),
+      options: ["O", "D", "P", "V"],
+      correctOptionIndex: 1,
     },
     {
-      videoUri: require("../videos/Basic Greetings & Common Phrases/A.T.M. Card.mp4"),
-      options: ["Good Morning", "Good Night", "See You", "Welcome"],
+      videoUri: require("../videos/Alphabets & Numbers/D/Dangerous.mp4"),
+      options: ["Safe", "Dangerous", "Careful", "Calm"],
+      correctOptionIndex: 1,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/D/Daughter.mp4"),
+      options: ["Son", "Mother", "Daughter", "Sister"],
+      correctOptionIndex: 2,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/D/Day.mp4"),
+      options: ["Night", "Week", "Month", "Day"],
       correctOptionIndex: 3,
     },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/D/Deaf.mp4"),
+      options: ["Blind", "Mute", "Deaf", "Lame"],
+      correctOptionIndex: 2,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/D/December.mp4"),
+      options: ["January", "March", "December", "July"],
+      correctOptionIndex: 2,
+    },
+    
+
+    {
+  videoUri: require("../videos/Alphabets & Numbers/D/D.mp4"),
+  options: ["O", "D", "P", "V"],
+  correctOptionIndex: 1,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/D/Dangerous.mp4"),
+  options: ["Safe", "Dangerous", "Careful", "Calm"],
+  correctOptionIndex: 1,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/D/Daughter.mp4"),
+  options: ["Son", "Mother", "Daughter", "Sister"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/D/Day.mp4"),
+  options: ["Night", "Week", "Month", "Day"],
+  correctOptionIndex: 3,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/D/Deaf.mp4"),
+  options: ["Blind", "Mute", "Deaf", "Lame"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/D/December.mp4"),
+  options: ["January", "March", "December", "July"],
+  correctOptionIndex: 2,
+},
+
+
+{
+  videoUri: require("../videos/Alphabets & Numbers/E/E.mp4"),
+  options: ["A", "E", "I", "O"],
+  correctOptionIndex: 1,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/E/Earn.mp4"),
+  options: ["Spend", "Earn", "Lose", "Borrow"],
+  correctOptionIndex: 1,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/E/Eat [VEB] or Food.mp4"),
+  options: ["Drink", "Eat", "Cook", "Sleep"],
+  correctOptionIndex: 1,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/E/Enemy.mp4"),
+  options: ["Friend", "Ally", "Enemy", "Partner"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/E/Evening.mp4"),
+  options: ["Morning", "Afternoon", "Night", "Evening"],
+  correctOptionIndex: 3,
+},
+
+
+{
+  videoUri: require("../videos/Alphabets & Numbers/F/F.mp4"),
+  options: ["A", "B", "F", "H"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/F/Family.mp4"),
+  options: ["Friends", "Family", "Neighbors", "Relatives"],
+  correctOptionIndex: 1,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/F/Father.mp4"),
+  options: ["Father", "Mother", "Uncle", "Grandfather"],
+  correctOptionIndex: 0,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/F/February.mp4"),
+  options: ["January", "March", "February", "April"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/F/Feed.mp4"),
+  options: ["Eat", "Feed", "Cook", "Sleep"],
+  correctOptionIndex: 1,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/F/Follow.mp4"),
+  options: ["Ignore", "Follow", "Lead", "Avoid"],
+  correctOptionIndex: 1,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/F/Friday.mp4"),
+  options: ["Monday", "Friday", "Sunday", "Wednesday"],
+  correctOptionIndex: 1,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/F/Friend.mp4"),
+  options: ["Enemy", "Stranger", "Friend", "Neighbor"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/F/Fry.mp4"),
+  options: ["Boil", "Steam", "Fry", "Bake"],
+  correctOptionIndex: 2,
+},
+
+
+{
+  videoUri: require("../videos/Alphabets & Numbers/G/G.mp4"),
+  options: ["Boil", "Steam", "Fry", "Bake"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/G/Get.mp4"),
+  options: ["Boil", "Steam", "Fry", "Bake"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/G/Girl.mp4"),
+  options: ["Boil", "Steam", "Fry", "Bake"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/G/Google.mp4"),
+  options: ["Boil", "Steam", "Fry", "Bake"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/G/Granddaughter.mp4"),
+  options: ["Boil", "Steam", "Fry", "Bake"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/G/Grandfather.mp4"),
+  options: ["Boil", "Steam", "Fry", "Bake"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/G/Grandmother.mp4"),
+  options: ["Boil", "Steam", "Fry", "Bake"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/G/Grandson.mp4"),
+  options: ["Boil", "Steam", "Fry", "Bake"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/G/Group.mp4"),
+  options: ["Boil", "Steam", "Fry", "Bake"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/G/Guest.mp4"),
+  options: ["Boil", "Steam", "Fry", "Bake"],
+  correctOptionIndex: 2,
+},
+
+
+{
+  videoUri: require("../videos/Alphabets & Numbers/H/H.mp4"),
+  options: ["A", "B", "H", "G"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/H/Handicapped.mp4"),
+  options: ["Healthy", "Handicapped", "Strong", "Fit"],
+  correctOptionIndex: 1,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/H/Hello.mp4"),
+  options: ["Goodbye", "Hello", "Thanks", "Sorry"],
+  correctOptionIndex: 1,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/H/Hide.mp4"),
+  options: ["Show", "Search", "Hide", "Find"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/H/Holiday.mp4"),
+  options: ["Work", "Holiday", "Meeting", "Exam"],
+  correctOptionIndex: 1,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/H/Home or House.mp4"),
+  options: ["Office", "Hotel", "Home", "Market"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/H/How Many.mp4"),
+  options: ["Where", "What", "How Many", "Who"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/H/How.mp4"),
+  options: ["Where", "When", "What", "How"],
+  correctOptionIndex: 3,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/H/Hungry.mp4"),
+  options: ["Sleepy", "Thirsty", "Hungry", "Tired"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/H/Hurt.mp4"),
+  options: ["Happy", "Hurt", "Fine", "Strong"],
+  correctOptionIndex: 1,
+},
+
+
+{
+  videoUri: require("../videos/Alphabets & Numbers/I/I (Person).mp4"),
+  options: ["You", "I", "He", "She"],
+  correctOptionIndex: 1,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/I/If.mp4"),
+  options: ["Then", "If", "Because", "When"],
+  correctOptionIndex: 1,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/I/Important.mp4"),
+  options: ["Trivial", "Important", "Unnecessary", "Common"],
+  correctOptionIndex: 1,
+},
+
+
+{
+  videoUri: require("../videos/Alphabets & Numbers/J/J.mp4"),
+  options: ["A", "J", "M", "Z"],
+  correctOptionIndex: 1,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/J/January.mp4"),
+  options: ["March", "April", "January", "June"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/J/July.mp4"),
+  options: ["July", "September", "November", "December"],
+  correctOptionIndex: 0,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/J/June.mp4"),
+  options: ["August", "June", "October", "May"],
+  correctOptionIndex: 1,
+},
+
+
+{
+  videoUri: require("../videos/Alphabets & Numbers/K/K.mp4"),
+  options: ["A", "B", "K", "M"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/K/Kill or Murder.mp4"),
+  options: ["Save", "Protect", "Kill", "Help"],
+  correctOptionIndex: 2,
+},
+
+
+{
+  videoUri: require("../videos/Alphabets & Numbers/L/L.mp4"),
+  options: ["J", "L", "M", "N"],
+  correctOptionIndex: 1,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/L/Laptop.mp4"),
+  options: ["Tablet", "Desktop", "Laptop", "Mobile"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/L/Lend.mp4"),
+  options: ["Borrow", "Give", "Lend", "Take"],
+  correctOptionIndex: 2,
+},
+
+
+
+{
+  videoUri: require("../videos/Alphabets & Numbers/M/M.mp4"),
+  options: ["A", "B", "M", "Z"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/M/Man.mp4"),
+  options: ["Woman", "Boy", "Man", "Girl"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/M/March.mp4"),
+  options: ["January", "March", "December", "July"],
+  correctOptionIndex: 1,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/M/May.mp4"),
+  options: ["April", "June", "May", "July"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/M/Me.mp4"),
+  options: ["You", "Me", "They", "We"],
+  correctOptionIndex: 1,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/M/Meet.mp4"),
+  options: ["Ignore", "Meet", "Avoid", "Forget"],
+  correctOptionIndex: 1,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/M/Mobile.mp4"),
+  options: ["Laptop", "Tablet", "Mobile", "Computer"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/M/Monday.mp4"),
+  options: ["Sunday", "Tuesday", "Monday", "Friday"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/M/Month.mp4"),
+  options: ["Week", "Year", "Month", "Day"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/M/Morning.mp4"),
+  options: ["Evening", "Night", "Morning", "Afternoon"],
+  correctOptionIndex: 2,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/M/Mother.mp4"),
+  options: ["Father", "Mother", "Brother", "Sister"],
+  correctOptionIndex: 1,
+},
+{
+  videoUri: require("../videos/Alphabets & Numbers/M/Mother-In-Law.mp4"),
+  options: ["Father-In-Law", "Mother-In-Law", "Sister-In-Law", "Uncle"],
+  correctOptionIndex: 1,
+},
   ],
+
+  "Basic Greetings & Common Phrases": [
+    {
+      videoUri: require("../videos/Basic Greetings & Common Phrases/Afternoon.mp4"),
+      options: ["Night", "Good", "Thank No", "Afternoon"],
+      correctOptionIndex: 3,
+    },
+    {
+      videoUri: require("../videos/Basic Greetings & Common Phrases/Sorry.mp4"),
+      options: ["Sorry", "Good Night", "See You", "Welcome"],
+      correctOptionIndex: 0,
+    },
+  ],
+
+
   "Actions & Verbs": [
     {
       videoUri: require("../videos/Actions & Verbs/Borrow.mp4"),
@@ -302,6 +883,8 @@ const videoMap: Record<ModuleName, { videoUri: any; options: string[]; correctOp
       correctOptionIndex: 0,
     },
   ],
+
+
   "Question Words & Sentences": [
     {
       videoUri: require("../videos/Question Words & Sentences/Where.mp4"),
@@ -347,6 +930,8 @@ const videoMap: Record<ModuleName, { videoUri: any; options: string[]; correctOp
       correctOptionIndex: 3,
     },
   ],
+
+
   "Common Objects & Places": [
     {
       videoUri: require("../videos/Common Objects & Places/Table.mp4"),
@@ -392,6 +977,197 @@ const videoMap: Record<ModuleName, { videoUri: any; options: string[]; correctOp
       correctOptionIndex: 3,
     },
   ],
+
+
+  "Colors & Basic Adjectives": [
+    {
+      videoUri: require("../videos/Colors & Basic Adjectives/Blue.mp4"),
+      options: ["Red", "Blue", "Purple", "Green"],
+      correctOptionIndex: 1,
+    },
+   {
+      videoUri: require("../videos/Colors & Basic Adjectives/Fast.mp4"),
+      options: ["Easy", "Sad", "Fast", "Small"],
+      correctOptionIndex: 2,
+    },
+{
+      videoUri: require("../videos/Colors & Basic Adjectives/Big.mp4"),
+      options: ["Big", "Hot", "Cold", "Slow"],
+      correctOptionIndex: 0,
+    },
+{
+      videoUri: require("../videos/Colors & Basic Adjectives/Green.mp4"),
+      options: ["Red", "Yellow", "Purple", "Green"],
+      correctOptionIndex: 3,
+    },
+{
+      videoUri: require("../videos/Colors & Basic Adjectives/Difficult.mp4"),
+      options: ["Happy", "Difficult", "Slow", "Easy"],
+      correctOptionIndex: 1,
+    },
+{
+      videoUri: require("../videos/Colors & Basic Adjectives/Hot.mp4"),
+      options: ["Hot", "Slow", "Sad", "Cold"],
+      correctOptionIndex: 0,
+    },
+{
+      videoUri: require("../videos/Colors & Basic Adjectives/Cold.mp4"),
+      options: ["Small", "Cold", "Big", "Happy"],
+      correctOptionIndex: 1,
+    },
+{
+      videoUri: require("../videos/Colors & Basic Adjectives/Easy.mp4"),
+      options: ["Hot", "Happy", "Sad", "Easy"],
+      correctOptionIndex: 3,
+    },
+{
+      videoUri: require("../videos/Colors & Basic Adjectives/Happy.mp4"),
+      options: ["Happy", "Difficult", "Slow", "Easy"],
+      correctOptionIndex: 0,
+    },
+{
+      videoUri: require("../videos/Colors & Basic Adjectives/Purple.mp4"),
+      options: ["Red", "Blue", "Purple", "Green"],
+      correctOptionIndex: 2,
+    },
+{
+      videoUri: require("../videos/Colors & Basic Adjectives/Red.mp4"),
+      options: ["Red", "Blue", "Purple", "Green"],
+      correctOptionIndex: 0,
+    },
+{
+      videoUri: require("../videos/Colors & Basic Adjectives/Sad.mp4"),
+      options: ["Happy", "Difficult", "Sad", "Easy"],
+      correctOptionIndex: 1,
+    },
+{
+      videoUri: require("../videos/Colors & Basic Adjectives/Slow.mp4"),
+      options: ["Slow", "Big", "Hot", "Difficult"],
+      correctOptionIndex: 0,
+    },
+{
+      videoUri: require("../videos/Colors & Basic Adjectives/Small.mp4"),
+      options: ["Cold", "Small", "Fast", "Sad"],
+      correctOptionIndex: 1,
+    },
+{
+      videoUri: require("../videos/Colors & Basic Adjectives/Yellow.mp4"),
+      options: ["Yellow", "Blue", "Purple", "Green"],
+      correctOptionIndex: 0,
+    },
+  ],
+
+
+  "Days, Months & Time": [
+    {
+      videoUri: require("../videos/Days, Months & Time/April.mp4"),
+      options: ["May", "June", "September", "April"],
+      correctOptionIndex: 3,
+    },
+    {
+      videoUri: require("../videos/Days, Months & Time/August.mp4"),
+      options: ["April", "March", "August", "July"],
+      correctOptionIndex: 2,
+    },
+     {
+      videoUri: require("../videos/Days, Months & Time/February.mp4"),
+      options: ["February", "June", "September", "July"],
+      correctOptionIndex: 0,
+    }, {
+      videoUri: require("../videos/Days, Months & Time/Friday.mp4"),
+      options: ["Monday", "Friday", "Saturday", "Tuesday"],
+      correctOptionIndex: 1,
+    }, {
+      videoUri: require("../videos/Days, Months & Time/January.mp4"),
+      options: ["May", "June", "September", "January"],
+      correctOptionIndex: 3,
+    }, {
+      videoUri: require("../videos/Days, Months & Time/July.mp4"),
+      options: ["July", "August", "September", "April"],
+      correctOptionIndex: 0,
+    }, {
+      videoUri: require("../videos/Days, Months & Time/June.mp4"),
+      options: ["May", "June", "January", "March"],
+      correctOptionIndex: 1,
+    }, {
+      videoUri: require("../videos/Days, Months & Time/March.mp4"),
+      options: ["August", "June", "March", "April"],
+      correctOptionIndex: 2,
+    }, {
+      videoUri: require("../videos/Days, Months & Time/May.mp4"),
+      options: ["May", "July", "September", "August"],
+      correctOptionIndex: 0,
+    }, {
+      videoUri: require("../videos/Days, Months & Time/Monday.mp4"),
+      options: ["Monday", "Friday", "Saturday", "Tuesday"],
+      correctOptionIndex: 0,
+    }, 
+    {
+      videoUri: require("../videos/Days, Months & Time/Saturday (1).mp4"),
+      options: ["Sunday", "Thursday", "Saturday", "Tuesday"],
+      correctOptionIndex: 2,
+    }, 
+    {
+      videoUri: require("../videos/Days, Months & Time/September.mp4"),
+      options: ["May", "June", "September", "April"],
+      correctOptionIndex: 2,
+    }, 
+    {
+      videoUri: require("../videos/Days, Months & Time/Thursday.mp4"),
+      options: ["Thursday", "Friday", "Saturday", "Tuesday"],
+      correctOptionIndex: 0,
+    }, 
+    {
+      videoUri: require("../videos/Days, Months & Time/Tuesday.mp4"),
+      options:  ["Monday", "Thursday", "Sunday", "Tuesday"],
+      correctOptionIndex: 3,
+    }, 
+    {
+      videoUri: require("../videos/Days, Months & Time/Wednesday.mp4"),
+      options: ["Thursday", "Wednesday", "Saturday", "Monday"],
+      correctOptionIndex: 1,
+    }, 
+
+  ],
+
+
+  "Family & Relationships": [
+  {
+    videoUri: require("../videos/Family & Relationships/Mother.mp4"),
+    options: ["Father", "Sister", "Mother", "Daughter"],
+    correctOptionIndex: 2,
+  },
+  {
+    videoUri: require("../videos/Family & Relationships/Father.mp4"),
+    options: ["Uncle", "Brother", "Father", "Grandfather"],
+    correctOptionIndex: 2,
+  },
+  {
+    videoUri: require("../videos/Family & Relationships/Husband.mp4"),
+    options: ["Wife", "Brother", "Husband", "Friend"],
+    correctOptionIndex: 2,
+  },
+  {
+    videoUri: require("../videos/Family & Relationships/Wife.mp4"),
+    options: ["Sister", "Mother", "Wife", "Daughter"],
+    correctOptionIndex: 2,
+  },
+  ],
+
+  "Sentence Formation & Grammar Basics": [
+  {
+    videoUri: require("../videos/Sentence Formation & Grammar Basics/They.mp4"),
+    options: ["We", "I", "They", "You"],
+    correctOptionIndex: 2,
+  },
+  {
+    videoUri: require("../videos/Sentence Formation & Grammar Basics/Without.mp4"),
+    options: ["With", "Without", "For", "By"],
+    correctOptionIndex: 1,
+  },
+],
+
+
   // Add similar objects for other modules
 };
 
