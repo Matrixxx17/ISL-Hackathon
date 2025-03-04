@@ -137,6 +137,7 @@
 
 // Define the module structure
 // Define the module structure
+// Define the module structure
 export interface Module {
   id: number;
   title: string;
@@ -155,7 +156,7 @@ export interface Question {
 // Define valid module names
 export const moduleNames = [
   "Introduction to ISL",
-  "Alphabet & Numbers",
+  "Alphabets & Numbers",
   "Basic Greetings & Common Phrases",
   "Days, Months & Time",
   "Family & Relationships",
@@ -175,48 +176,223 @@ export const modules: Module[] = moduleNames.map((name, index) => ({
   description: `Learn about ${name} in Indian Sign Language.`,
 }));
 
-// 🔹 **Manually Define Video Paths (Since Dynamic Require() is Not Allowed)**
-const videoMap: Record<ModuleName, any[]> = {
+// **Manually Define Video Paths and Options**
+const videoMap: Record<ModuleName, { videoUri: any; options: string[]; correctOptionIndex: number }[]> = {
   "Introduction to ISL": [
-    require("../videos/Introduction to ISL/A.mp4"),
-    require("../videos/Introduction to ISL/A.T.M. Card.mp4"),
+    {
+      videoUri: require("../videos/Introduction to ISL/A.mp4"),
+      options: ["A", "B", "C", "D"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Introduction to ISL/A.T.M. Card.mp4"),
+      options: ["A.T.M. Card", "Credit Card", "Debit Card", "ID Card"],
+      correctOptionIndex: 0,
+    },
   ],
-  "Alphabet & Numbers": [
-    require("../videos/Alphabets & Numbers/A/A.mp4"),
-    require("../videos/Alphabets & Numbers/A/A.T.M. Card.mp4"),
+  "Alphabets & Numbers": [
+    {
+      videoUri: require("../videos/Alphabets & Numbers/A/A.mp4"),
+      options: ["A", "B", "C", "D"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/B/B.mp4"),
+      options: ["A", "B", "C", "D"],
+      correctOptionIndex: 1,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/Numbers/10,000,000 or One Crore.mp4"),
+      options: ["1 Million", "1 Crore", "100 Thousand", "10 Thousand"],
+      correctOptionIndex: 1,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/Numbers/1000 or One Thousand.mp4"),
+      options: ["1000", "10000", "100", "10"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/C/C.mp4"),
+      options: ["O", "D", "P", "C"],
+      correctOptionIndex: 3,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/Numbers/6 or Six.mp4"),
+      options: ["50", "100", "6", "10"],
+      correctOptionIndex: 2,
+    },{
+      videoUri: require("../videos/Alphabets & Numbers/Numbers/20 or Twenty.mp4"),
+      options: ["1", "20", "100", "10"],
+      correctOptionIndex: 1,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/Q/Q.mp4"),
+      options: ["O", "D", "Q", "C"],
+      correctOptionIndex: 2,
+    }, {
+      videoUri: require("../videos/Alphabets & Numbers/V/V.mp4"),
+      options: ["O", "D", "P", "V"],
+      correctOptionIndex: 3,
+    },
+    {
+      videoUri: require("../videos/Alphabets & Numbers/Numbers/5,000,000 or Five Million.mp4"),
+      options: ["10 Million", "10000", "5 Million", "50 "],
+      correctOptionIndex: 2,
+    },{
+      videoUri: require("../videos/Alphabets & Numbers/Numbers/100 or One Hundred.mp4"),
+      options: ["0", "5000", "100", "10"],
+      correctOptionIndex: 2,
+    },
+
   ],
   "Basic Greetings & Common Phrases": [
-    require("../videos/Basic Greetings & Common Phrases/A.mp4"),
-    require("../videos/Basic Greetings & Common Phrases/A.T.M. Card.mp4"),
-  ],
-  "Days, Months & Time": [
-    require("../videos/Days, Months & Time/A.mp4"),
-    require("../videos/Days, Months & Time/A.T.M. Card.mp4"),
-  ],
-  "Family & Relationships": [
-    require("../videos/Family & Relationships/A.mp4"),
-    require("../videos/Family & Relationships/A.T.M. Card.mp4"),
-  ],
-  "Colors & Basic Adjectives": [
-    require("../videos/Colors & Basic Adjectives/A.mp4"),
-    require("../videos/Colors & Basic Adjectives/A.T.M. Card.mp4"),
-  ],
-  "Common Objects & Places": [
-    require("../videos/Common Objects & Places/Book.mp4"),
-    require("../videos/Common Objects & Places/Chair.mp4"),
+    {
+      videoUri: require("../videos/Basic Greetings & Common Phrases/A.mp4"),
+      options: ["Hello", "Goodbye", "Thank You", "Sorry"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Basic Greetings & Common Phrases/A.T.M. Card.mp4"),
+      options: ["Good Morning", "Good Night", "See You", "Welcome"],
+      correctOptionIndex: 3,
+    },
   ],
   "Actions & Verbs": [
-    require("../videos/Actions & Verbs/Call.mp4"),
-    require("../videos/Actions & Verbs/Cross.mp4"),
+    {
+      videoUri: require("../videos/Actions & Verbs/Borrow.mp4"),
+      options: ["Call", "Borrow", "Eat", "Write"],
+      correctOptionIndex: 1,
+    },
+    {
+      videoUri: require("../videos/Actions & Verbs/Dislike.mp4"),
+      options: ["Do", "Walk", "Drink", "Dislike"],
+      correctOptionIndex: 3,
+    },
+    {
+      videoUri: require("../videos/Actions & Verbs/Run.mp4"),
+      options: ["Run", "Eat", "Stand", "Catch"],
+      correctOptionIndex: 0,
+    }, {
+      videoUri: require("../videos/Actions & Verbs/Eat.mp4"),
+      options: ["Write", "Touch", "Eat", "Call"],
+      correctOptionIndex: 2,
+    }, {
+      videoUri: require("../videos/Actions & Verbs/Defend.mp4"),
+      options: ["Jump", "Defend", "Call", "Doubt"],
+      correctOptionIndex: 1,
+    }, {
+      videoUri: require("../videos/Actions & Verbs/Slap.mp4"),
+      options: ["Slap", "Cross", "Draw", "Communicate"],
+      correctOptionIndex: 0,
+    }, {
+      videoUri: require("../videos/Actions & Verbs/Disagree.mp4"),
+      options: ["Drink", "Catch", "Stand", "Disagree"],
+      correctOptionIndex: 3,
+    }, {
+      videoUri: require("../videos/Actions & Verbs/Walk.mp4"),
+      options: ["Stand", "Walk", "Do", "Run"],
+      correctOptionIndex: 1,
+    }, {
+      videoUri: require("../videos/Actions & Verbs/Call.mp4"),
+      options: ["Run", "Jump", "Call", "Write"],
+      correctOptionIndex: 2,
+    }, {
+      videoUri: require("../videos/Actions & Verbs/Touch.mp4"),
+      options: ["Touch", "Dislike", "Sleep", "Walk"],
+      correctOptionIndex: 0,
+    },
   ],
   "Question Words & Sentences": [
-    require("../videos/Question Words & Sentences/If.mp4"),
-    require("../videos/Question Words & Sentences/When.mp4"),
+    {
+      videoUri: require("../videos/Question Words & Sentences/Where.mp4"),
+      options: ["How", "Where", "If", "Why"],
+      correctOptionIndex: 1,
+    },
+    {
+      videoUri: require("../videos/Question Words & Sentences/What.mp4"),
+      options: ["If", "Why", "Who", "What"],
+      correctOptionIndex: 3,
+    },
+    {
+      videoUri: require("../videos/Question Words & Sentences/How.mp4"),
+      options: ["How", "Whom", "If", "Why"],
+      correctOptionIndex: 0,
+    },  {
+      videoUri: require("../videos/Question Words & Sentences/Whose.mp4"),
+      options: ["If", "Whose", "When", "Who"],
+      correctOptionIndex: 1,
+    },  {
+      videoUri: require("../videos/Question Words & Sentences/Which.mp4"),
+      options: ["Where", "Whom", "Which", "What"],
+      correctOptionIndex: 2,
+    },  {
+      videoUri: require("../videos/Question Words & Sentences/If.mp4"),
+      options: ["If", "When", "How", "Whose"],
+      correctOptionIndex: 0,
+    },  {
+      videoUri: require("../videos/Question Words & Sentences/Whom.mp4"),
+      options: ["How", "Where", "Whom", "Why"],
+      correctOptionIndex: 2,
+    },  {
+      videoUri: require("../videos/Question Words & Sentences/When.mp4"),
+      options: ["Whose", "What", "If", "When"],
+      correctOptionIndex: 3,
+    },  {
+      videoUri: require("../videos/Question Words & Sentences/Who.mp4"),
+      options: ["Who", "Where", "What", "Why"],
+      correctOptionIndex: 0,
+    },  {
+      videoUri: require("../videos/Question Words & Sentences/Why.mp4"),
+      options: ["How", "When", "Whom", "Why"],
+      correctOptionIndex: 3,
+    },
   ],
-  "Sentence Formation & Grammar Basics": [
-    require("../videos/Sentence Formation & Grammar Basics/A.mp4"),
-    require("../videos/Sentence Formation & Grammar Basics/A.T.M. Card.mp4"),
+  "Common Objects & Places": [
+    {
+      videoUri: require("../videos/Common Objects & Places/Table.mp4"),
+      options: ["Door", "Book", "Table", "School"],
+      correctOptionIndex: 2,
+    },
+    {
+      videoUri: require("../videos/Common Objects & Places/Hospital.mp4"),
+      options: ["Hospital", "Bottle", "Pen", "Market"],
+      correctOptionIndex: 0,
+    },
+    {
+      videoUri: require("../videos/Common Objects & Places/Chair.mp4"),
+      options: ["Book", "Chair", "Park", "Door"],
+      correctOptionIndex: 1,
+    }, {
+      videoUri: require("../videos/Common Objects & Places/Market.mp4"),
+      options: ["Pen", "Table", "Market", "School"],
+      correctOptionIndex: 2,
+    }, {
+      videoUri: require("../videos/Common Objects & Places/Door.mp4"),
+      options: ["Door", "Table", "Chair", "Park"],
+      correctOptionIndex: 0,
+    }, {
+      videoUri: require("../videos/Common Objects & Places/Bottle.mp4"),
+      options: ["Hospital", "Bottle", "Market", "School"],
+      correctOptionIndex: 1,
+    }, {
+      videoUri: require("../videos/Common Objects & Places/School.mp4"),
+      options: ["Chair", "Book", "School", "Door"],
+      correctOptionIndex: 2,
+    }, {
+      videoUri: require("../videos/Common Objects & Places/Pen.mp4"),
+      options: ["Pen", "Park", "Table", "Hospital"],
+      correctOptionIndex: 0,
+    }, {
+      videoUri: require("../videos/Common Objects & Places/Book.mp4"),
+      options: ["Door", "Book", "Bottle", "Market"],
+      correctOptionIndex: 1,
+    }, {
+      videoUri: require("../videos/Common Objects & Places/Park.mp4"),
+      options: ["School", "Pen", "Hospital", "Park"],
+      correctOptionIndex: 3,
+    },
   ],
+  // Add similar objects for other modules
 };
 
 // **Updated Function to Get Quiz Questions**
@@ -235,13 +411,13 @@ export const getQuizQuestions = (moduleId: ModuleName, setId: number): Question[
     "This sign is used for?",
   ];
 
-  // Generate questions
-  const allQuestions: Question[] = videos.map((videoUri, index) => ({
+  // Generate questions with user-defined options
+  const allQuestions: Question[] = videos.map((video, index) => ({
     id: index + 1,
-    videoUri,
+    videoUri: video.videoUri,
     question: questionPrompts[index % questionPrompts.length],
-    options: shuffleArray(["A", "A.T.M. Card", "Thank You", "Sorry"]),
-    correctOptionIndex: Math.floor(Math.random() * 4),
+    options: video.options,
+    correctOptionIndex: video.correctOptionIndex,
   }));
 
   // Select 10 random questions
@@ -257,6 +433,7 @@ export function shuffleArray<T>(array: T[]): T[] {
   }
   return newArray;
 }
+
 
 export interface Question {
   id: number;

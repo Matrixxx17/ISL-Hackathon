@@ -518,6 +518,7 @@
 //Implemented commented code
 "use client";
 
+import { ScrollView } from "react-native";
 import { useState, useEffect, useRef } from "react";
 import {
   View,
@@ -622,52 +623,53 @@ export default function QuizScreen({ route, navigation }: Props) {
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.progressContainer}>
-        <Text style={styles.progressText}>
-          Question {currentQuestionIndex + 1} of {questions.length}
-        </Text>
-        <View style={styles.progressBar}>
-          <View
-            style={[
-              styles.progressFill,
-              { width: `${((currentQuestionIndex + 1) / questions.length) * 100}%` },
-            ]}
+      <ScrollView contentContainerStyle={styles.scrollContainer} keyboardShouldPersistTaps="handled">
+        <View style={styles.progressContainer}>
+          <Text style={styles.progressText}>
+            Question {currentQuestionIndex + 1} of {questions.length}
+          </Text>
+          <View style={styles.progressBar}>
+            <View
+              style={[
+                styles.progressFill,
+                { width: `${((currentQuestionIndex + 1) / questions.length) * 100}%` },
+              ]}
+            />
+          </View>
+        </View>
+  
+        <View style={styles.videoContainer}>
+          <Video
+            ref={videoRef}
+            source={currentQuestion.videoUri}
+            style={styles.video}
+            useNativeControls
+            resizeMode={ResizeMode.CONTAIN}
+            isLooping
+            shouldPlay
           />
         </View>
-      </View>
-
-      <View style={styles.videoContainer}>
-        <Video
-          ref={videoRef}
-          source={currentQuestion.videoUri} // ✅ No need for `{ uri: ... }` for local videos
-          style={styles.video}
-          useNativeControls
-          resizeMode={ResizeMode.CONTAIN} // ✅ Fix: Use correct `resizeMode` type
-          isLooping
-          shouldPlay
-        />
-      </View>
-
-      <Text style={styles.question}>{currentQuestion.question}</Text>
-
-      <View style={styles.optionsContainer}>
-        {currentQuestion.options.map((option: string, index: number) => (
-          <TouchableOpacity
-            key={index}
-            style={[
-              styles.optionButton,
-              selectedOption === index &&
-                (isCorrect ? styles.correctOption : styles.incorrectOption),
-            ]}
-            onPress={() => handleOptionPress(index)}
-            disabled={showFeedback}
-          >
-            <Text style={styles.optionText}>{option}</Text>
-          </TouchableOpacity>
-        ))}
-      </View>
-
-      {/* Feedback overlay */}
+  
+        <Text style={styles.question}>{currentQuestion.question}</Text>
+  
+        <View style={styles.optionsContainer}>
+          {currentQuestion.options.map((option: string, index: number) => (
+            <TouchableOpacity
+              key={index}
+              style={[
+                styles.optionButton,
+                selectedOption === index &&
+                  (isCorrect ? styles.correctOption : styles.incorrectOption),
+              ]}
+              onPress={() => handleOptionPress(index)}
+              disabled={showFeedback}
+            >
+              <Text style={styles.optionText}>{option}</Text>
+            </TouchableOpacity>
+          ))}
+        </View>
+      </ScrollView>
+  
       {showFeedback && (
         <Animated.View
           style={[
@@ -700,6 +702,10 @@ const styles = StyleSheet.create({
   progressBar: { height: 8, backgroundColor: "#e0e0e0", borderRadius: 4, overflow: "hidden" },
   progressFill: { height: "100%", backgroundColor: "#4CAF50" },
   
+  scrollContainer: {
+    flexGrow: 1,
+    paddingBottom: 20, // Ensures enough space for scrolling
+  },
 
   videoContainer: { height: "50%", width: "90%", marginHorizontal: 16, marginBottom: 20, borderRadius: 10, alignSelf: "center", overflow: "hidden", backgroundColor: "#000" },
 
